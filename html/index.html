@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML</title>
+</head>
+<body>
+    <!-- paragraf -->
+    <p>paragraf 1</p>
+    <p>paragraf 2</p>
+    <br>
+    <p>Lorem ipsum, dolor sit amet <br> consectetur adipisicing elit</p>
+    <hr>
+    <p>Lorem <b>ipsum dolor</b> <i>amet consectetur</i>  <u>adipisicing elit.</u> Expedita, at?</p>
+    <hr>
+    <p><strong>Lorem ipsum dolor sit.</strong><em>Lorem, ipsum.</em></p>
+    <hr>
+
+    <!-- heading -->
+    <h1>Lorem ipsum dolor sit.</h1>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <h3>Lorem ipsum dolor sit.</h3>
+    <h4>Lorem ipsum dolor sit.</h4>
+    <h5>Lorem ipsum dolor sit.</h5>
+    <h6>Lorem ipsum dolor sit.</h6>
+    <hr>
+
+    <!-- list -->
+    <ol type="A">
+        <!-- 1, a, A, I, i -->
+        <li>bangun</li>
+        <li>makan</li>
+        <li>tidur</li>
+    </ol>
+    <ul type="square">
+        <!-- disc, square, circle -->
+        <li>bangun</li>
+        <li>makan</li>
+        <li>tidur</li>
+    </ul>
+    <dl>
+        <dt>DPR</dt>
+        <dd>Dewan Perwakilan Rakyat</dd>
+        <dt>MPR</dt>
+        <dd>Majelis Permusuyawaratan Rakyat</dd>
+    </dl>
+    <hr>
+
+    <!-- hyperlink -->
+    <p>klik <a href="https://www.google.com/">disini</a></p>
+    <p>pindah halaman. klik <a href="link.html">disini</a></p>
+    <p>pindah halaman bagian 2. klik <a href="link.html#bagian2">disini</a></p>
+    <p>pindah halaman bagian 2 dengan tab baru. klik <a href="link.html#bagian2" target="_blank">disini</a></p>
+    <hr>
+
+    <!-- image -->
+    <a href="https://smkrus.sch.id" target="_blank">
+        <img src="img/logo-smkrus.png" title="smkrus" alt="logosmkrus" width="100">
+    </a>
+    <hr>
+
+    <!-- table -->
+    <table border="2" cellspacing="5" cellpadding="10">
+        <tr>
+            <th>kolom 1</th>
+            <th>kolom 2</th>
+        </tr>
+        <tr>
+            <td>baris 1, kolom 1</td>
+            <td>baris 1, kolom 2</td>
+        </tr>
+        <tr>
+            <td>baris 2, kolom 1</td>
+            <td>baris 2, kolom 2</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td rowspan="3">rowspan 3</td>
+            <td colspan="2">colspan 2</td>
+        </tr>
+        <tr>
+            <td>2, 2</td>
+            <td>2, 3</td>
+        </tr>
+        <tr>
+            <td>3, 2</td>
+            <td>3, 3</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" cellspacing="0" cellpadding="8">
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td colspan="2" rowspan="2"></td>
+            <td>2,4</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            <td>3,4</td>
+        </tr>
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+            <td>4,4</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" cellspacing="0" cellpadding="8">
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td>2,3</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- form -->
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="username">username :</label></td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td><label for="password">password :</label></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><label>gender :</label></td>
+                <td>
+                    <input type="radio" id="pria" name="gender"><label for="pria">pria</label>
+                    <input type="radio" id="wanita" name="gender"><label for="wanita">wanita</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>kegiatan: </label></td>
+                <td>
+                    <input type="checkbox" id="bangun"><label for="bangun">bangun</label>
+                    <input type="checkbox" id="makan"><label for="makan">makan</label>
+                    <input type="checkbox" id="tidur"><label for="tidur">tidur</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="kota">kota</label></td>
+                <td>
+                    <select name="" id="kota">
+                    <option value="">bandung</option>
+                    <option value="">kudus</option>
+                    <option value="">jakarta</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="textarea">textarea :</label></td>
+                <td><textarea id="textarea"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="kirim"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

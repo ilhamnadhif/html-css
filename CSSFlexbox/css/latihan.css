@@ -1,0 +1,142 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  margin-bottom: 1000px;
+}
+
+/* Latihan 1 */
+.container-satu {
+  max-width: 800px;
+  background-color: white;
+  margin: 50px auto;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+}
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+.sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+
+/* Latihan 2 */
+.container-dua {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.layanan {
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.layanan.satu {
+  background-color: red;
+}
+.layanan.dua {
+  background-color: green;
+}
+.layanan.tiga {
+  background-color: blue;
+}
+
+/* latihan 3 */
+.container-tiga {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.thumbnail {
+  width: 25%;
+}
+.thumbnail img {
+  width: 100%;
+}
+
+/* latihan 4 */
+.container-empat {
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+}
+.card {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background-color: #eee;
+  overflow: hidden;
+  margin: 10px;
+  flex: 1;
+}
+.card .header {
+  height: 150px;
+  background-color: #666;
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.card.besar{
+  transform: scale(1.12);
+}
+
+/* latihan 5 */
+.container-lima {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  border: 5px solid black;
+  box-sizing: border-box;
+  display: flex;
+}
+.kotak {
+  width: 140px;
+  height: 140px;
+  border: 5px solid red;
+  text-align: center;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+}
+
+.kotak span {
+  margin: auto;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  .container-dua {
+    flex-direction: column;
+  }
+  .layanan {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .thumbnail {
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .container-tiga {
+    flex-direction: column;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+}

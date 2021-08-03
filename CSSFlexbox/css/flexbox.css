@@ -1,0 +1,34 @@
+.container {
+  width: 600px;
+  height: 190px;
+  border: 5px solid #000000;
+  margin: 30px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  /* flex-direction: row || column; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between ; */
+  /* align-items: flex-start; */
+}
+
+.container div {
+  background-color: lightblue;
+  margin: 2px;
+  flex: 1;
+}
+.satu {
+    order: 2;
+}
+.container .dua {
+    order: 1;
+    flex: 2;
+    height: 50px;
+    align-self: center;
+}
+.tiga {
+    order: 4;
+}
+.empat {
+    order: 3;
+}
